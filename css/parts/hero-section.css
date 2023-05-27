@@ -1,0 +1,49 @@
+.hero-section {
+	max-width: var(--max-content-width);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: var(--gap-xl);
+	place-items: center;
+}
+
+.hero__info {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	gap: var(--gap-xl);
+}
+
+.hero__txt {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: start;
+	gap: var(--gap-lg);
+	flex: 1;
+}
+
+.hero__txt p {
+	margin-bottom: 0.5em;
+}
+
+.hero__links {
+	width: 100%;
+	display: flex;
+	gap: var(--gap-md);
+	justify-content: space-between;
+	align-items: center;
+	fill: #adadad;
+}
+
+.databiz {
+	aspect-ratio: 114 / 20;
+}
+.audiophile {
+	aspect-ratio: 73 / 36;
+}
+.meet {
+	aspect-ratio: 90 / 20;
+}
+.maker {
+	aspect-ratio: 83 / 24;
+}

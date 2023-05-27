@@ -1,0 +1,32 @@
+.display-flex {
+	display: flex;
+}
+
+.logo-focus {
+	--offset-pos: 0.25rem;
+	--offset-neg: calc(var(--offset-pos) * -1);
+	--blur-radius: calc(var(--offset-pos) * 0.5);
+	--time: 0.25s;
+
+	transition: filter var(--time), fill var(--time), transform var(--time);
+}
+.logo-focus:where(:focus-visible, :hover) {
+	fill: var(--clr-accent-3-solid);
+	filter: drop-shadow(
+			var(--offset-neg) var(--offset-neg) var(--blur-radius)
+				var(--clr-accent-2-solid)
+		)
+		drop-shadow(
+			var(--offset-pos) var(--offset-pos) var(--blur-radius)
+				var(--clr-accent-4-solid)
+		);
+}
+
+.logo-focus svg {
+	max-height: 100%;
+	transform: scale(1);
+	transition: transform var(--time);
+}
+.logo-focus:where(:focus-visible, :hover) svg {
+	transform: scale(1.1);
+}

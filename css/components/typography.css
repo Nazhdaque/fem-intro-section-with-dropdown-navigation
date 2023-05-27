@@ -1,0 +1,32 @@
+@font-face {
+	font-display: swap;
+	font-family: "Epilogue";
+	font-style: normal;
+	font-weight: 500;
+	src: url(fonts/epilogue-v17-latin-500.woff2) format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: "Epilogue";
+	font-style: normal;
+	font-weight: 700;
+	src: url(fonts/epilogue-v17-latin-700.woff2) format("woff2");
+}
+
+:root {
+	--ff-primary: "Epilogue", sans-serif;
+
+	--fs-200: 0.85rem;
+	--fs-300: 1rem;
+	--fs-400: 1.125rem;
+	--fs-900: clamp(2.2rem, 4vw + 1rem, 4.5rem);
+
+	--fw-regular: 500;
+	--fw-bold: 700;
+}
+
+.title-lg {
+	font-size: var(--fs-900);
+	color: var(--clr-neutral-900-solid);
+	line-height: 1;
+}

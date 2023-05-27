@@ -1,0 +1,60 @@
+.button {
+	--btn-padding-lg: 1em 1.75em;
+	--btn-padding-md: 0.75em 1.25em;
+	--btn-border-radius: 0.85em;
+	--btn-border-thikness: var(--border-thikness);
+	--btn-border-initial: var(--btn-border-thikness) solid transparent;
+	--btn-clr-accent: var(--clr-neutral-900-solid);
+	--btn-clr-accent-inverted: var(--clr-neutral-200-solid);
+
+	cursor: pointer;
+	padding: var(--btn-padding-md);
+	border: var(--btn-border-initial);
+	border-radius: var(--btn-border-radius);
+	line-height: 1;
+	outline: none;
+}
+
+.button:where(:hover, :focus-visible) {
+	color: var(--btn-clr-accent);
+}
+.button:focus-visible {
+	border-color: var(--btn-clr-accent);
+}
+
+.button.login {
+	margin-left: auto;
+}
+.button:where(.login, .outlined) {
+	text-align: center;
+}
+
+.button.outlined {
+	border-color: var(--clr-neutral-600-solid);
+}
+.button.outlined:where(:hover, :focus-visible) {
+	border-color: var(--btn-clr-accent);
+}
+.button.outlined:where(:focus-visible, :active) {
+	background-color: var(--btn-clr-accent);
+	color: var(--btn-clr-accent-inverted);
+}
+.button.outlined:focus-visible:active {
+	color: var(--btn-clr-accent);
+	background-color: var(--btn-clr-accent-inverted);
+}
+
+.button.filled {
+	background-color: var(--btn-clr-accent);
+	color: var(--btn-clr-accent-inverted);
+	padding: var(--btn-padding-lg);
+}
+.button.filled:where(:hover, :focus-visible) {
+	background-color: transparent;
+	color: var(--btn-clr-accent);
+	border-color: var(--btn-clr-accent);
+}
+.button.filled:active {
+	background-color: var(--btn-clr-accent);
+	color: var(--btn-clr-accent-inverted);
+}

@@ -1,0 +1,44 @@
+.main-header {
+	display: flex;
+	gap: 3em;
+	justify-content: space-between;
+}
+
+.logo {
+	cursor: pointer;
+	flex: 0 0 5em;
+	align-self: end;
+	aspect-ratio: 84 / 27;
+	fill: #151515;
+}
+
+.nav-panel {
+	font-size: var(--fs-200);
+	display: flex;
+	align-items: end;
+	gap: 1em;
+	flex: 1;
+}
+.nav-panel::before {
+	position: absolute;
+	background-color: hsl(var(--clr-neutral-900-alpha), 0.75);
+	top: 0;
+	left: -100vw;
+	bottom: 0;
+	width: 100vw;
+}
+
+.nav-panel-toggle {
+	flex: 0 0 2.25em;
+	aspect-ratio: 1;
+	z-index: 1;
+	display: none;
+	cursor: pointer;
+	padding: 0.25em;
+	align-self: start;
+	margin-bottom: -0.15em;
+}
+.nav-panel-toggle:focus-visible {
+	outline: var(--border-thikness) solid var(--clr-neutral-900-solid);
+	border-radius: 0.25em;
+}
