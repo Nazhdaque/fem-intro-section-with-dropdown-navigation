@@ -32,12 +32,16 @@
 }
 .dropdown__title::after {
 	content: "";
+	background-color: var(--clr-neutral-600-solid);
+	width: 0.75em;
 	mask-image: url(/images/icon-arrow-down.svg);
 	mask-repeat: no-repeat;
 	mask-position: center;
 	mask-size: contain;
-	background-color: var(--clr-neutral-600-solid);
-	width: 0.75em;
+	-webkit-mask-image: url(/images/icon-arrow-down.svg);
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: contain;
 }
 .dropdown__title:where(:hover, :focus)::after {
 	background-color: var(--clr-neutral-900-solid);

@@ -73,6 +73,6 @@ const navPanel = new mobileMenu();
 navPanel.initMobileMenuOn(900);
 
 console.log(
-	"%c			Coded by ✨Nazhdaque✨			  \n	https://www.frontendmentor.io/profile/Nazhdaque	  ",
+	"%cCoded by ✨Nazhdaque✨\nhttps://www.frontendmentor.io/profile/Nazhdaque",
 	"background: #222; color: chartreuse; font-size: 1.25rem"
 );
